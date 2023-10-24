@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FORMULARIO DE EMPLEADO</title>
+    <style>
+        body {
+            background-color: #1abc9c; /* Color beige */
+        }
+        form {
+            background-color: #f0e5e5; /* Fondo rosado para el formulario */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            color: #000; /* Texto en color negro */
+        }
+        p strong, p strong {
+            color: #000; /* Subtítulo en color negro */
+        }
+    </style>
+</head>
+<body>
+    <h1>FORMULARIO DE EMPLEADO</h1>
+    <p><strong>¡ERES BIENVENIDO!</strong></p>
+    <form action="procesar_formulario.php" method="post">
+        <label for="Nombre">Nombre:</label>
+        <input type="text" name="Nombre" id="Nombre">
+        <br><br>
+        <label for="Apellido">Apellido:</label>
+        <input type="text" name="Apellido" id="Apellido">
+        <br><br>
+        <label for="Cedula">Número de Cédula:</label>
+       <input type="text" name="Cedula" id="Cedula" placeholder="Ejemplo: 0976556490">
+        <br><br>
+        <label for="CorreoElectronico">Correo electrónico:</label>
+        <input type="email" name="CorreoElectronico" id="CorreoElectronico">
+        <br><br>
+        <label for="Telefono">Teléfono:</label>
+        <input type="tel" name="Telefono" id="Telefono" placeholder="Ejemplo: (539) 8867-311">
+        <br><br>
+        <label for="Direccion">Dirección:</label>
+        <input type="text" name="Direccion" id="Direccion">
+        <br><br>
+        <label>Fecha de Nacimiento:</label>
+        <input type="date" name="FechaNacimiento">
+        <br><br>
+        <p>GÉNERO:
+            <select name="Genero">
+                <option>MASCULINO</option>
+                <option>FEMENINO</option>
+            </select>
+        </p>
+        <p>Nivel de Preparacion:
+            <select name= "Nivel de Preparacion">
+              <option>Primaria</option>
+              <option>Secundaria</option>
+              <option>Masterado</option>
+            </select>
+         <br> <br>
+        <strong>Turno:</strong><br>
+        <input type="radio" name="Turno" value="Matutino">
+        Matutina<br>
+        <input type="radio" name="Turno" value="Nocturno">
+        Nocturna<br>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
